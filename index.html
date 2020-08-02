@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Knife Travel-travek agency web design.</title>
+      <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <style media="screen">
+      body {
+        margin: 0;
+      }
+      .header-part {
+        display: flex;
+        flex-direction: column;
+        font-family: sans-serif;
+      }
+      .top-line {
+        display: flex;
+        background: #f3f3f3;
+        align-items: center;
+        justify-content: center;
+      }
+      .top-linecontent {
+        display: flex;
+        width: 1400px;
+        justify-content: space-between;
+      }
+      .languages ul {
+        list-style: none;
+        padding: 0px;
+        display: flex;
+      }
+      .languages ul li {
+        padding: 0px 10px;
+        color: black;
+        cursor: pointer;
+      }
+      .languages ul li span:hover{
+        color: #49bcf7;
+      }
+      .language .active-language {
+        color: #49bcf7;
+      }
+      .citys {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .city-list ul {
+        list-style: none;
+        display: flex;
+      }
+      .city-list ul li {
+        padding: 2px 10px;
+        color: #49bcf7;
+        cursor: pointer;
+      }
+      .navigation-part {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0px;
+      }
+      .navigation-wrapper {
+        width: 1400px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .navigation-wrapper .logo {
+        margin: 0px 10px;
+      }
+      .navigation ul {
+        list-style: none;
+        display: flex;
+        padding: 0px;
+        cursor: pointer;
+      }
+      .navigation ul span {
+        display: flex;
+        align-items: center;
+        padding: 12px 16px;
+        color: black;
+        transition: 0.3s;
+      }
+      .navigation ul span:hover {
+        background: #49bcf7;
+        color: white;
+        border-radius: 6px;
+        box-shadow: 0px 12px 25px 1px rgba(0, 0, 0, 0.2);
+      }
+      .navigation ul li {
+
+      }
+      .navigation .active-home span {
+        background: #49bcf7;
+        border-radius: 6px;
+        color: white;
+        box-shadow: 0px 12px 25px 1px rgba(0, 0, 0, 0.2);
+      }
+      .contact .inner-content {
+       display: flex;
+       margin-right: 10px;
+       color: #49bcf7;
+      }
+      .contact .inner-content img {
+        margin-right: 14px;
+      }
+      .content-one {
+        background-image: url(bg.jpg);
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        align-items: center;
+        justify-content: center;
+      }
+      .content-one .sub-heading {
+        color: white;
+        font-size: 24px;
+      }
+      .button-part {
+        margin-top: 80px;
+      }
+      .button-part .button {
+        padding: 15px 30px;
+        border: none;
+        border-radius: 2em;
+        color: #fff;
+        background-image: linear-gradient(45deg, #f798a5, #fdd6bd);
+        font-size: 16px;
+        cursor: pointer;
+      }
+      .content-two {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+      .form-wrapper {
+        background: #fff;
+        box-shadow: 0 0 3px 1px rgba(0,0,0,0.2);
+        width: 800px;
+        display: flex;
+        padding: 15px;
+        margin-top: -50px;
+        border-radius: 0.4em;
+      }
+      .form-wrapper .form-location,
+      .form-wrapper .form-time,
+      .form-wrapper .form-persons {
+        width: 30%;
+        height: 60px;
+        line-height: 60px;
+        color: #898989;
+        font-size: 16px;
+        font-family: sans-serif;
+      }
+      .form-wrapper .form-location {
+        text-align: left;
+      }
+      .form-wrapper .form-time {
+        text-align: center;
+      }
+      .form-wrapper .form-submit {
+       text-align: center;
+      }
+      .form-wrapper span {
+        display: flex;
+        align-items: center;
+      }
+      .form-wrapper svg {
+        fill: #49bcf7;
+        padding-right: 8px;
+      }
+      .form-wrapper .form-submit button{
+        padding: 20px 26px;
+        background: #49bcf7;
+        border: hidden;
+        border-radius: 0.4em;
+        cursor: pointer;
+      }
+      .form-wrapper .form-submit svg{
+        fill: white;
+        padding: 0px;
+      }
+      .content-three {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .blog{
+        width: 100%;
+        display: flex;
+        margin-top: 80px;
+      }
+      .blog .text-part {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .blog .text-part h2{
+        font-size: 50px;
+        font-family: 'Quicksand', sans-serif;
+        color: #6E6E6E;
+        padding: 0;
+        margin: 0;
+      }
+      .blog .text-part p {
+        font-size: 10px;
+        line-height: 1.5em;
+        font-family: 'Quicksand', sans-serif;
+      }
+      .blog .text-part .buttos{
+        display: flex;
+        margin: 10px;
+      }
+      .blog .text-part .next,
+      .blog .text-part .previous {
+        width: 40px;
+        height: 40px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: 0px solid #fff;
+        border-radius: 50%;
+        box-shadow: 0 0 3px 1px rgba(0,0,0,0.2);
+        margin: 10px;
+        cursor: pointer;
+      }
+      .blog .text-part .previous {
+        background: white;
+      }
+      .blog .text-part .previous svg{
+        fill: #929292;
+      }
+      .blog .text-part .next {
+        background:  #49bcf7;
+      }
+      .blog .text-part .next svg {
+        fill: #fff;
+      }
+      .blog .img-part {
+        width: 60%;
+        text-align: right;
+        display: flex;
+      }
+      .blog .img-part .img-wholepart {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+      }
+      .blog .img-part .img-wholepart .img-one,
+      .blog .img-part .img-wholepart .img-two,
+      .blog .img-part .img-wholepart .img-three {
+        width: 33%;
+        text-align: center;
+      }
+      .blog .img-part .img-wholepart .img-one .text,
+      .blog .img-part .img-wholepart .img-two .text,
+      .blog .img-part .img-wholepart .img-three .text {
+        transform: translateY(-100%);
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+      }
+      .blog .img-part .img-wholepart .img-one:hover .text,
+      .blog .img-part .img-wholepart .img-two:hover .text,
+      .blog .img-part .img-wholepart .img-three:hover .text {
+        transform: translateY(0%);
+        opacity: 1;
+      }
+      .blog .img-part img {
+        height: 300px;
+        width: 250px;
+      }
+      .content-four {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .content-four .whole-content{
+        width: 1200px;
+        display: block;
+      }
+      .content-four .whole-content .heading{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 40px;
+        font-family: sans-serif;
+      }
+      .content-four .whole-content .photos{
+        margin: 100px 0px;
+      }
+      .content-four .whole-content .photos .two-photos,
+      .content-four .whole-content .photos .three-photos{
+        display: flex;
+        width: 1200px;
+      }
+      .content-four .whole-content .photos .two-photos .first-photo{
+        width: 65%;
+        background-image: url(palace.jpg);
+        width: 770px;
+        height: 550px;
+        position: relative;
+        border: hidden;
+        border-radius: 0.4em;
+        margin: 0px 5px;
+      }
+      .content-four .whole-content .photos .two-photos .second-photo {
+        width: 35%;
+        background-image: url(Beach.jpg);
+        width: 394px;
+        height: 550px;
+        position: relative;
+        border: hidden;
+        border-radius: 0.4em;
+        margin-left: 20px;
+      }
+      .content-four .whole-content .photos .text{
+        position: absolute;
+        bottom: 30px;
+        left: 60px;
+        color: white;
+        font-family: sans-serif;
+      }
+      .content-four .whole-content .photos .text button{
+        padding: 12px 22px;
+        background: #49bcf7;
+        border: hidden;
+        border-radius: 0.4em;
+        cursor: pointer;
+        color: white;
+      }
+      .content-four .whole-content .photos .three-photos .first-photo{
+        width: 33.33%;
+        background-image: url(cityscape.jpg);
+        width: 550px;
+        height: 370px;
+        position: relative;
+        border: hidden;
+        border-radius: 0.4em;
+        margin: 16px 8px;
+      }
+      .content-four .whole-content .photos .three-photos .second-photo{
+        width: 33.33%;
+        background-image: url(studio.jpg);
+        width: 572px;
+        height: 370px;
+        position: relative;
+        border: hidden;
+        border-radius: 0.4em;
+        margin: 16px 12px;
+      }
+      .content-four .whole-content .photos .three-photos .third-photo{
+        width: 33.33%;
+        background-image: url(iceland.jpg);
+        width: 550px;
+        height: 370px;
+        position: relative;
+        border: hidden;
+        border-radius: 0.4em;
+        margin: 16px 8px;
+      }
+      .content-five {
+        background: #f2f4f6;
+        padding-bottom: 120px;
+      }
+      .content-five .list-heading {
+        display: flex;
+        padding: 70px 300px;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .content-five .list-heading h2 span{
+        font-size: 60px;
+        font-family: 'Quicksand', sans-serif;
+      }
+      .content-five .list-heading button{
+        margin: 20px;
+      }
+      .content-five .list-heading .button {
+        padding: 15px 30px;
+        border: none;
+        border-radius: 2em;
+        color: #fff;
+        background-image: linear-gradient(45deg, #f798a5, #fdd6bd);
+        font-size: 16px;
+        cursor: pointer;
+      }
+      .content-five .list-heading .button:hover {
+        background-image: linear-gradient(45deg, #fdd6bd, #f798a5);
+      }
+      .offer-list {
+        margin: 0px 200px;
+      }
+      .offer-list .first-list {
+        display: flex;
+      }
+      .offer-list ul {
+        list-style: none;
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0px;
+        padding: 0px;
+        width: 1120px;
+        cursor: pointer;
+        border: hidden;
+        border-radius: 4px;
+        transition: 0.6s;
+        padding: 30px 0px;
+      }
+      .offer-list ul li .heading{
+        margin: 2px;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 19px;
+      }
+      .offer-list ul li .sub-heading{
+        margin: 0px;
+        color: #929292;
+        font-family: 'Quicksand', sans-serif;
+      }
+      .offer-list ul:hover {
+        background: #fff;
+        box-shadow: 0px 8px 16px 1px rgba(0, 0, 0, 0.1);
+      }
+      .content-six {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 120px 0px;
+      }
+      .content-six .blog {
+        display: block;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 40px;
+      }
+      .content-six .blog h2 {
+        font-size: 40px;
+        font-family: sans-serif;
+        margin: 0px;
+      }
+      .content-six .blog h3 {
+        font-size: 40px;
+        font-family: 'Quicksand', sans-serif;
+        margin-top: 0px;
+        color: #A0A0A0;
+      }
+      .blog-photos {
+        width: 70%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 60px;
+      }
+      .blog-photos img{
+        width: 100%;
+        border-radius: 6px;
+      }
+      .blog-img-one,
+      .blog-img-two,
+      .blog-img-three {
+        width: 33.33%;
+        max-width: 300px;
+        margin: 10px;
+      }
+      .blog-img-one .text,
+      .blog-img-two .text,
+      .blog-img-three .text {
+        margin-left: 25px;
+        font-family: sans-serif;
+        /* transform: translateY(-100%);
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer; */
+      }
+      /* .blog-img-one:hover .text,
+      .blog-img-two:hover .text,
+      .blog-img-three:hover .text {
+        transform: translateY(0%);
+        opacity: 1;
+      } */
+      .blog-photos .text p {
+        font-size: 13px;
+        color: #BCBCBC;
+      }
+      .blog-photos .text a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #E03F14;
+      }
+      .blog-photos .text a svg {
+        margin-left: 16px;
+        fill: #E03F14;
+      }
+      .content-six button {
+        padding: 15px 30px;
+        border: none;
+        border-radius: 2em;
+        color: #fff;
+        background-image: linear-gradient(45deg, #f798a5, #fdd6bd);
+        font-size: 16px;
+        cursor: pointer;
+      }
+      .content-seven {
+        background: #277095;
+        display: flex;
+      }
+      .content-seven .blog {
+        width: 100%;
+      }
+      .content-seven .blog .text-part {
+        color: #fff;
+        margin: 100px 0px;
+        width: 40%;
+      }
+      .content-seven .blog h2{
+        color: #fff;
+      }
+      .content-seven .personal-data {
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .personal-data .persons {
+        display: inline-flex;
+        padding: 7% 5% 7% 12%;
+      }
+      .personal-data .persons .person-one,
+      .personal-data .persons .person-second {
+        background: white;
+        padding: 6% 3%;
+        width: 40%;
+        border: hidden;
+        border-radius: 4px;
+        margin: 40px;
+        font-family: 'Quicksand', sans-serif;
+      }
+      .personal-data .persons .person-one p,
+      .personal-data .persons .person-second p{
+        font-family: sans-serif;
+        color: #828282;
+        font-size: 12px;
+      }
+      .stars-date {
+        display: flex;
+        justify-content: space-between;
+        font-size: 16px;
+      }
+      .stars-date .date {
+        font-size: 12px;
+      }
+      .stars svg {
+        fill: #49bcf7;
+      }
+      .person-details {
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+      }
+      .person-details img {
+        border-radius: 50%;
+        margin-right: 20px;
+        width: 40px;
+        height: 40px;
+      }
+      .person-name h5 {
+        margin: 0px;
+      }
+      .person-name h6 {
+        margin: 4px 0px;
+        color: #828282;
+      }
+      .content-eight {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      .insta-logo svg {
+        fill: #49bcf7;
+      }
+      .content-eight .insta-logo h3 {
+        font-size: 50px;
+        font-family: sans-serif;
+        margin-bottom: 0px;
+      }
+      .content-eight .insta-logo h4 {
+        font-size: 40px;
+        font-family: 'Quicksand', sans-serif;
+        margin-top: 0px;
+        color: #828282;
+      }
+      .content-eight .photo-galary {
+        display: flex;
+      }
+        .content-eight .subscibe {
+        margin: 100px 0px;
+      }
+      .content-eight .subscibe h3 {
+        font-family: sans-serif;
+        margin: 6px;
+      }
+      .content-eight .subscibe h4 {
+        font-family: 'Quicksand', sans-serif;
+        color: #828282;
+        font-size: 16px;
+        margin: 0px;
+      }
+      .content-nine {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .content-nine .subscribe-wrapper {
+        background: #fff;
+        width: 800px;
+        box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.2);
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        border-radius: 6em;
+        margin-bottom: -40px;
+      }
+      .content-nine .subscribe-wrapper .email-location {
+        height: 60px;
+        line-height: 60px;
+        color: #898989;
+        font-size: 16px;
+        font-family: sans-serif;
+        padding-left: 40px;
+      }
+      .email-location span {
+        display: flex;
+        align-items: center;
+      }
+      .email-location span svg {
+        padding-right: 20px;
+        fill: #49bcf7;
+      }
+      .subscribe-button {
+        display: flex;
+      }
+      .subscribe-button button {
+        background: #49bcf7;
+        border: hidden;
+        border-radius: 5em;
+        padding: 0px 50px;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      footer {
+        background: #f1f1f1;
+      }
+      footer .navigation-part {
+        margin: 0px
+      }
+      footer .navigation-wrapper {
+        padding: 120px;
+      }
+
+
+
+
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header-part">
+        <div class="top-line">
+          <div class="top-linecontent">
+          <div class="languages">
+            <ul class="language">
+              <li class="active-language"><span>English</span></li>
+              <li><span>French</span></li>
+              <li><span>Espanol</span></li>
+            </ul>
+          </div>
+          <div class="citys">
+            <div class="city-heading">
+                <span>Popular Distination</span>
+            </div>
+            <div class="city-list">
+              <ul class="city">
+                <li><span>Kuala Lumpur</span></li>
+                <li><span>New York</span></li>
+                <li><span>Dubai</span></li>
+                <li><span>Paris</span></li>
+                <li><span>Bangkok</span></li>
+              </ul>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="navigation-part">
+        <div class="navigation-wrapper">
+        <div class="logo">
+          <img src="knife travel logo.png" alt="company logo">
+        </div>
+        <div class="navigation">
+            <ul>
+              <li class="active-home"><span>Home</span></li>
+              <li><span>About</span></li>
+              <li><span>Tours</span></li>
+              <li><span>Blog</span></li>
+              <li><span>Contact</span></li>
+            </ul>
+        </div>
+        <div class="contact">
+          <div class="inner-content">
+            <div>
+              <img src="contact icon.png" alt="contact icon">
+            </div>
+            <div>
+              <span>011 234 456 999</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </header>
+    <section>
+      <div class="content-one">
+        <div class="section-wrapper">
+          <img src="summer.png" alt="" width="900px" height="185px">
+        </div>
+        <div class="sub-heading">
+          <span>Curated list of summer triops to <strong>Sea side,Island & Oceans</strong></span>
+        </div>
+        <div class="button-part">
+          <button class="button button-one">Explore Now</button>
+        </div>
+      </div>
+      <div class="content-two">
+        <div class="form-wrapper">
+          <div class="form-location">
+            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M18.364 17.364L12 23.728l-6.364-6.364a9 9 0 1 1 12.728 0zM12 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0-2a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/></svg>Your text goes here</span>
+          </div>
+          <div class="form-time">
+            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm1-10V7h-2v7h6v-2h-4z"/></svg>Your text goes here</span>
+          </div>
+          <div class="form-persons">
+            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M20 22H4v-2a5 5 0 0 1 5-5h6a5 5 0 0 1 5 5v2zm-8-9a6 6 0 1 1 0-12 6 6 0 0 1 0 12z"/></svg>Your text goes here</span>
+          </div>
+          <div class="form-submit">
+            <button class="search"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"/></svg></button>
+          </div>
+        </div>
+      </div>
+      <div class="content-three">
+        <div class="blog">
+          <div class="text-part">
+            <h2>Upcoming <br> Tours</h2>
+            <p>Tourism is travel for pleasure or business; also the <br> theory and practice of touring, the business of <br> attracting, accommodating, and entertaining…</p>
+              <div class="buttons">
+                <button class="previous"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M10.828 12l4.95 4.95-1.414 1.414L8 12l6.364-6.364 1.414 1.414z"/></svg></button>
+                <button class="next"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"/></svg></button>
+              </div>
+            </div>
+          <div class="img-part">
+            <div class="img-wholepart">
+              <div class="img-one">
+                <div class="blog-img">
+                  <img src="nature.jpg" alt="">
+                </div>
+                <div class="text">
+                 <h3>Cook civiche in a <br> peruvian home</h3>
+                 <h4>From $450</h4>
+               </div>
+              </div>
+              <div class="img-two">
+                <div class="blog-img">
+                  <img src="fruit.jpg" alt="">
+                </div>
+                <div class="text">
+                  <h3>Cook civiche in a <br> peruvian home</h3>
+                  <h4>From $450</h4>
+                </div>
+              </div>
+              <div class="img-three">
+                <div class="blog-img">
+                  <img src="tree.jpg" alt="">
+                </div>
+                <div class="text">
+                  <h3>Cook civiche in a <br> peruvian home</h3>
+                  <h4>From $450</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content-four">
+        <div class="whole-content">
+          <div class="heading">
+            <span>Discover Around</span>
+            <span>The World</span>
+          </div>
+          <div class="photos">
+            <div class="two-photos">
+              <div class="first-photo">
+                <div class="text">
+                  <button class="photo-button">15 Tours</button>
+                  <h4>Ancient Roman Road & <br>Aqueducts by bike</h4>
+                </div>
+              </div>
+              <div class="second-photo">
+                <div class="text">
+                  <button class="photo-button">12 Tours</button>
+                  <h4>Whiskey & beer at <br>the local barber</h4>
+              </div>
+            </div>
+          </div>
+            <div class="three-photos">
+              <div class="first-photo">
+                <div class="text">
+                  <button class="photo-button">21 Tours</button>
+                  <h4>Paris photo walk<br>with lio iglesias</h4>
+                </div>
+              </div>
+              <div class="second-photo">
+                <div class="text">
+                  <button class="photo-button">16 Tours</button>
+                  <h4>Art studio sparks<br>your creativity</h4>
+                </div>
+              </div>
+              <div class="third-photo">
+                <div class="text">
+                  <button class="photo-button">19 Tours</button>
+                  <h4>Essence of iceland<br>own custom souvenir</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content-five">
+        <div class="list-heading">
+          <h2><span>Best Offers</span></h2>
+          <button class="button button-one">View All Offers</button>
+        </div>
+        <div class="offer-list">
+          <div class="first-list">
+            <ul>
+              <li>
+                <h4 class="heading"><span>Paris, France</span></h4>
+                <h5 class="sub-heading"><span>Panorama City</span></h5>
+              </li>
+              <li>
+                <h4 class="heading"><span>7 Days</span></h4>
+                <h5 class="sub-heading"><span>6 Nights</span></h5>
+              </li>
+              <li>
+                <h4 class="heading"><span>11 February</span></h4>
+                <h5 class="sub-heading"><span>06:30PM</span></h5>
+              </li>
+              <li>
+                <h4 class="heading"><span>$ 1889</span></h4>
+                <h5 class="sub-heading"><span>It was $ 2449</span></h5>
+              </li>
+              <li>
+                <h4 class="heading"><span>$ 560</span></h4>
+                <h5 class="sub-heading"><span>Save 20%</span></h5>
+              </li>
+            </ul>
+         </div>
+         <div class="second-list">
+           <ul>
+             <li>
+               <h4 class="heading"><span>Dublin, Ireland</span></h4>
+               <h5 class="sub-heading"><span>Car Roadtrip</span></h5>
+             </li>
+             <li>
+               <h4 class="heading"><span>4 Days</span></h4>
+               <h5 class="sub-heading"><span>5 Nights</span></h5>
+             </li>
+             <li>
+               <h4 class="heading"><span>09 February</span></h4>
+               <h5 class="sub-heading"><span>11:30PM</span></h5>
+             </li>
+             <li>
+               <h4 class="heading"><span>$ 1400</span></h4>
+               <h5 class="sub-heading"><span>It was $ 1900</span></h5>
+             </li>
+             <li>
+               <h4 class="heading"><span>$ 500</span></h4>
+               <h5 class="sub-heading"><span>Save 25%</span></h5>
+             </li>
+           </ul>
+        </div>
+        <div class="third-list">
+          <ul>
+            <li>
+              <h4 class="heading"><span>Burlin, Germany</span></h4>
+              <h5 class="sub-heading"><span>Museums & City</span></h5>
+            </li>
+            <li>
+              <h4 class="heading"><span>9 Days</span></h4>
+              <h5 class="sub-heading"><span>10 Nights</span></h5>
+            </li>
+            <li>
+              <h4 class="heading"><span>12 February</span></h4>
+              <h5 class="sub-heading"><span>09:00PM</span></h5>
+            </li>
+            <li>
+              <h4 class="heading"><span>$ 1480</span></h4>
+              <h5 class="sub-heading"><span>It was $ 1600</span></h5>
+            </li>
+            <li>
+              <h4 class="heading"><span>$ 800</span></h4>
+              <h5 class="sub-heading"><span>Save 25%</span></h5>
+            </li>
+          </ul>
+       </div>
+       </div>
+      </div>
+      <div class="content-six">
+        <div class="blog">
+          <h2>Explore the Travel</h2>
+          <h3>Trough our Blog & Journal</h3>
+        </div>
+        <div class="blog-photos">
+          <div class="blog-img-one">
+            <img src="airoplane.jpg" alt="">
+            <div class="text">
+              <h4><span>Hiking Greenland's Arctic <br> Circle Trail 2019.</span></h4>
+              <p>Touism is travel for pleasure or bisiness; <br> also the theory and practice of touring, the <br> business of attracting, accommodating</p>
+              <a href="button">Read more<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path fill="none" d="M0 0h24v24H0z"/><path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"/></svg></a>
+            </div>
+          </div>
+          <div class="blog-img-two">
+            <img src="boy.jpg" alt="">
+            <div class="text">
+              <h4><span>Why You Shouldn't Ride <br> Elephants in Indonesia</span></h4>
+              <p>Touism is travel for pleasure or bisiness; <br> also the theory and practice of touring, the <br> business of attracting, accommodating</p>
+              <a href="button">Read more<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path fill="none" d="M0 0h24v24H0z"/><path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"/></svg></a>
+            </div>
+          </div>
+          <div class="blog-img-three">
+            <img src="river.jpg" alt="">
+            <div class="text">
+              <h4><span>Best Travel Quotes For <br> Inspiration Travel Blogqq</span></h4>
+              <p>Touism is travel for pleasure or bisiness; <br> also the theory and practice of touring, the <br> business of attracting, accommodating</p>
+              <a href="button">Read more<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path fill="none" d="M0 0h24v24H0z"/><path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"/></svg></a>
+            </div>
+          </div>
+        </div>
+        <div class="read-blog-button">
+            <button class="button button-one">Read Our Blog</button>
+        </div>
+      </div>
+      <div class="content-seven">
+        <div class="blog">
+          <div class="text-part">
+            <h2>Travel Tours<br>Testimonials</h2>
+            <p>Tourism is travel for pleasure or business; also the <br> theory and practice of touring, the business of <br> attracting, accommodating, and entertaining…</p>
+              <div class="buttons">
+                <button class="previous"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M10.828 12l4.95 4.95-1.414 1.414L8 12l6.364-6.364 1.414 1.414z"/></svg></button>
+                <button class="next"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"/></svg></button>
+              </div>
+            </div>
+            <div class="personal-data">
+              <div class="persons">
+                <div class="person-one">
+                  <div class="stars-date">
+                    <div class="stars">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 17l-5.878 3.59 1.598-6.7-5.23-4.48 6.865-.55L12 2.5l2.645 6.36 6.866.55-5.231 4.48 1.598 6.7z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 17l-5.878 3.59 1.598-6.7-5.23-4.48 6.865-.55L12 2.5l2.645 6.36 6.866.55-5.231 4.48 1.598 6.7z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 17l-5.878 3.59 1.598-6.7-5.23-4.48 6.865-.55L12 2.5l2.645 6.36 6.866.55-5.231 4.48 1.598 6.7z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 17l-5.878 3.59 1.598-6.7-5.23-4.48 6.865-.55L12 2.5l2.645 6.36 6.866.55-5.231 4.48 1.598 6.7z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 14.656l2.817 1.72-.766-3.21 2.507-2.147-3.29-.264L12 7.708v6.948zM12 17l-5.878 3.59 1.598-6.7-5.23-4.48 6.865-.55L12 2.5l2.645 6.36 6.866.55-5.231 4.48 1.598 6.7L12 17z"/></svg>
+                    </div>
+                    <div class="date">
+                      <span>July 18th</span>
+                    </div>
+                  </div>
+                  <div>
+                    <h4>Everything was amzing!</h4>
+                    <p>Multos possumus cernantur. Vidisse aute eram ut dolor. Id se
+                      coniunctione.Senserit se magna offendit, culpa consequat nam domesticarum eu
+                      admodum a sunt admodum, ubi e praesentibus nam si ea familiaritatem, singulis
+                      graviterque si doctrina, eu quibusdam o quamquam aut senserit fidelissimae non
+                      constias. Vidisse velit cupidatat, nostrud aute excepteur mentitum, esse ubi.</p>
+                  </div>
+                  <div class="person-details">
+                    <div class="person-profile">
+                      <img src="girl profile.jpg" alt="">
+                    </div>
+                    <div class="person-name">
+                      <h5><span> Maja christiansen</span></h5>
+                      <h6><span>Paris, France Muosium Tour</span></h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="person-second">
+                  <div class="stars-date">
+                    <div class="stars">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 17l-5.878 3.59 1.598-6.7-5.23-4.48 6.865-.55L12 2.5l2.645 6.36 6.866.55-5.231 4.48 1.598 6.7z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 17l-5.878 3.59 1.598-6.7-5.23-4.48 6.865-.55L12 2.5l2.645 6.36 6.866.55-5.231 4.48 1.598 6.7z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 17l-5.878 3.59 1.598-6.7-5.23-4.48 6.865-.55L12 2.5l2.645 6.36 6.866.55-5.231 4.48 1.598 6.7z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 14.656l2.817 1.72-.766-3.21 2.507-2.147-3.29-.264L12 7.708v6.948zM12 17l-5.878 3.59 1.598-6.7-5.23-4.48 6.865-.55L12 2.5l2.645 6.36 6.866.55-5.231 4.48 1.598 6.7L12 17z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 14.656l2.817 1.72-.766-3.21 2.507-2.147-3.29-.264L12 7.708v6.948zM12 17l-5.878 3.59 1.598-6.7-5.23-4.48 6.865-.55L12 2.5l2.645 6.36 6.866.55-5.231 4.48 1.598 6.7L12 17z"/></svg>
+                    </div>
+                    <div class="date">
+                        <span>Augast 24th</span>
+                    </div>
+                  </div>
+                  <div>
+                    <h4>Everything was amzing!</h4>
+                    <p>Multos possumus cernantur. Vidisse aute eram ut dolor. Id se
+                      coniunctione.Senserit se magna offendit, culpa consequat nam domesticarum eu
+                      admodum a sunt admodum, ubi e praesentibus nam si ea familiaritatem, singulis
+                      graviterque si doctrina, eu quibusdam o quamquam aut senserit fidelissimae non
+                      constias. Vidisse velit cupidatat, nostrud aute excepteur mentitum, esse ubi.</p>
+                  </div>
+                  <div class="person-details">
+                    <div class="person-profile">
+                      <img src="girl profile 2.jpg" alt="">
+                    </div>
+                    <div class="person-name">
+                      <h5><span> Sofie Olsen</span></h5>
+                      <h6><span>Paris, France Muosium Tour</span></h6>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content-eight">
+        <div class="insta-logo">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="64" height="64"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm0-2a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm6.5-.25a1.25 1.25 0 0 1-2.5 0 1.25 1.25 0 0 1 2.5 0zM12 4c-2.474 0-2.878.007-4.029.058-.784.037-1.31.142-1.798.332-.434.168-.747.369-1.08.703a2.89 2.89 0 0 0-.704 1.08c-.19.49-.295 1.015-.331 1.798C4.006 9.075 4 9.461 4 12c0 2.474.007 2.878.058 4.029.037.783.142 1.31.331 1.797.17.435.37.748.702 1.08.337.336.65.537 1.08.703.494.191 1.02.297 1.8.333C9.075 19.994 9.461 20 12 20c2.474 0 2.878-.007 4.029-.058.782-.037 1.309-.142 1.797-.331.433-.169.748-.37 1.08-.702.337-.337.538-.65.704-1.08.19-.493.296-1.02.332-1.8.052-1.104.058-1.49.058-4.029 0-2.474-.007-2.878-.058-4.029-.037-.782-.142-1.31-.332-1.798a2.911 2.911 0 0 0-.703-1.08 2.884 2.884 0 0 0-1.08-.704c-.49-.19-1.016-.295-1.798-.331C14.925 4.006 14.539 4 12 4zm0-2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2z"/></svg>
+          <h3>Get Inspired with</h3>
+          <h4>Photos From Instagram</h4>
+        </div>
+        <div class="photo-galary">
+          <img src="white city.png" alt="">
+          <img src="cameraman.jpg" alt="">
+          <img src="boat.jpg" alt="">
+          <img src="beach city.jpg" alt="">
+          <img src="bicycling.jpg" alt="">
+        </div>
+        <div class="photo-galary">
+          <img src="vally.png" alt="">
+          <img src="photoclick.jpg" alt="">
+          <img src="mountain.jpg" alt="">
+          <img src="breach.jpg" alt="">
+          <img src="lake.jpg" alt="">
+        </div>
+        <div class="subscibe">
+          <h3>Subsciber to our Newsletter</h3>
+          <h4>Tourism is travel for pleasure or business</h4>
+        </div>
+      </div>
+      <div class="content-nine">
+        <div class="subscribe-wrapper">
+          <div class="email-location">
+            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm9.06 8.683L5.648 6.238 4.353 7.762l7.72 6.555 7.581-6.56-1.308-1.513-6.285 5.439z"/></svg>Type Your Email </span>
+          </div>
+          <div class="subscribe-button ">
+            <button class="subscibe">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+       <div class="navigation-part">
+        <div class="navigation-wrapper">
+        <div class="logo">
+          <img src="knife travel logo.png" alt="company logo">
+        </div>
+        <div class="navigation">
+            <ul>
+              <li class="active-home"><span>Home</span></li>
+              <li><span>About</span></li>
+              <li><span>Tours</span></li>
+              <li><span>Blog</span></li>
+              <li><span>Contact</span></li>
+            </ul>
+        </div>
+        <div class="contact">
+          <div class="inner-content">
+            <div>
+              <img src="contact icon.png" alt="contact icon">
+            </div>
+            <div>
+              <span>011 234 456 999</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  </body>
+</html>
