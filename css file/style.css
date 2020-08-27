@@ -297,7 +297,7 @@ body {
 }
 .content-four .whole-content .photos .two-photos .first-photo{
   width: 65%;
-  background-image: url(images/palace.jpg);
+  background-image: url(../images/palace.jpg);
   width: 770px;
   height: 550px;
   position: relative;
@@ -307,7 +307,7 @@ body {
 }
 .content-four .whole-content .photos .two-photos .second-photo {
   width: 35%;
-  background-image: url(images/Beach.jpg);
+  background-image: url(../images/Beach.jpg);
   width: 394px;
   height: 550px;
   position: relative;
@@ -332,7 +332,7 @@ body {
 }
 .content-four .whole-content .photos .three-photos .first-photo{
   width: 33.33%;
-  background-image: url(images/cityscape.jpg);
+  background-image: url(../images/cityscape.jpg);
   width: 550px;
   height: 370px;
   position: relative;
@@ -342,7 +342,7 @@ body {
 }
 .content-four .whole-content .photos .three-photos .second-photo{
   width: 33.33%;
-  background-image: url(images/studio.jpg);
+  background-image: url(../images/studio.jpg);
   width: 572px;
   height: 370px;
   position: relative;
@@ -352,7 +352,7 @@ body {
 }
 .content-four .whole-content .photos .three-photos .third-photo{
   width: 33.33%;
-  background-image: url(images/iceland.jpg);
+  background-image: url(../images/iceland.jpg);
   width: 550px;
   height: 370px;
   position: relative;
