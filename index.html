@@ -2,70 +2,83 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Knife Travel-travek agency web design.</title>
-      <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="css file/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Knife travel</title>
+    <link href="images/Knife-travel-logo.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css_file/style.css">
   </head>
   <body>
-    <header>
-      <div class="header-part">
-        <div class="top-line">
-          <div class="top-linecontent">
-          <div class="languages">
-            <ul class="language">
-              <li class="active-language"><span>English</span></li>
-              <li><span>French</span></li>
-              <li><span>Espanol</span></li>
-            </ul>
+    <!-- ======= Top Bar ======= -->
+    <div  id="topbar" class="d-none d-lg-flex sticky-top align-items-center">
+        <div class="container d-flex align-items-center justify-content-between">
+          <div class="d-flex">
+            <span class="active">English</span>
+            <span>French</span>
+            <span>Espanol</span>
           </div>
-          <div class="citys">
-            <div class="city-heading">
-                <span>Popular Distination</span>
-            </div>
-            <div class="city-list">
-              <ul class="city">
-                <li><span>Kuala Lumpur</span></li>
-                <li><span>New York</span></li>
-                <li><span>Dubai</span></li>
-                <li><span>Paris</span></li>
-                <li><span>Bangkok</span></li>
-              </ul>
-          </div>
-        </div>
-      </div>
-      </div>
-      <div class="navigation-part">
-        <div class="navigation-wrapper">
-        <div class="logo">
-          <img src="images/knife-travel-logo.png" alt="company logo">
-        </div>
-        <div class="navigation">
-            <ul>
-              <li class="active-home"><span>Home</span></li>
-              <li><span>About</span></li>
-              <li><span>Tours</span></li>
-              <li><span>Blog</span></li>
-              <li><span>Contact</span></li>
+          <div>
+            <ul class="d-flex">
+              <li class="active">Popular Distination</li>
+              <li>Kuala Lumpur</li>
+              <li>New York</li>
+              <li>Dubai</li>
+              <li>Paris</li>
+              <li>Bangkok</li>
             </ul>
         </div>
-        <div class="contact">
-          <div class="inner-content">
-            <div>
-              <img src="images/contact icon.png" alt="contact icon">
-            </div>
-            <div>
-              <span>011 234 456 999</span>
-            </div>
-          </div>
         </div>
+    </div>
+    <!-- ======= nav Bar ======= -->
+    <header id="header" class="sticky-top header">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+      <div class="container">
+        <div class="logo-box">
+            <a href="#" class="navbar-brand d-flex"><img src="images/knife-travel-logo.png" alt=""></a>
+        </div>
+        <button class="navbar-toggler order-3" type="button" data-toggle="collapse" data-target="#navbarnav" aria-controls="navbarnav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarnav">
+          <ul class="navbar-nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tours">Tours</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#blog">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+          <div class="number">
+            <span>
+                <img src="images/contact icon.png" alt="">
+            </span>
+            <a href="tel:001 234 567 8999">001 234 567 8999</a>
+          </div>
       </div>
-    </div>
-    </div>
-    </header>
-    <section>
-      <div class="content-one">
+    </nav>
+  </header>
+    <!-- ======= header part ======= -->
+  <div class="hero">
+    <div class="container-fluid  px-0">
+      <div class="bg">
         <div class="section-wrapper">
-          <img src="images/summer.png" alt="" width="900px" height="185px">
+          <img class="image-fluid" src="images/summer.png" alt="">
         </div>
         <div class="sub-heading">
           <span>Curated list of summer triops to <strong>Sea side,Island & Oceans</strong></span>
@@ -74,366 +87,503 @@
           <button class="button button-one">Explore Now</button>
         </div>
       </div>
-      <div class="content-two">
-        <div class="form-wrapper">
-          <div class="form-location">
-            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M18.364 17.364L12 23.728l-6.364-6.364a9 9 0 1 1 12.728 0zM12 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0-2a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/></svg>Your text goes here</span>
-          </div>
-          <div class="form-time">
-            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm1-10V7h-2v7h6v-2h-4z"/></svg>Your text goes here</span>
-          </div>
-          <div class="form-persons">
-            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M20 22H4v-2a5 5 0 0 1 5-5h6a5 5 0 0 1 5 5v2zm-8-9a6 6 0 1 1 0-12 6 6 0 0 1 0 12z"/></svg>Your text goes here</span>
-          </div>
-          <div class="form-submit">
-            <button class="search"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"/></svg></button>
-          </div>
+    </div>
+  </div>
+  <!-- ======= hero section is finish. ======= -->
+  <!-- ======= form part ======= -->
+  <div class="container">
+      <form class="form-wrapper" action="index.html" method="get">
+        <div class="form-location">
+          <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M18.364 17.364L12 23.728l-6.364-6.364a9 9 0 1 1 12.728 0zM12 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0-2a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/></svg></span> <input type="text" name="location" value="" placeholder="Where are you going?">
         </div>
-      </div>
-      <div class="content-three">
-        <div class="blog">
-          <div class="text-part">
-            <h2>Upcoming <br> Tours</h2>
-            <p>Tourism is travel for pleasure or business; also the <br> theory and practice of touring, the business of <br> attracting, accommodating, and entertaining…</p>
-              <div class="buttons">
-                <button class="previous"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M10.828 12l4.95 4.95-1.414 1.414L8 12l6.364-6.364 1.414 1.414z"/></svg></button>
-                <button class="next"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"/></svg></button>
+        <div class="form-time">
+          <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm1-10V7h-2v7h6v-2h-4z"/></svg></span> <input type="text" name="date-time" value="" placeholder="Thu, Jun 15 — Fri, Jun 23">
+        </div>
+        <div class="form-persons">
+          <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M20 22H4v-2a5 5 0 0 1 5-5h6a5 5 0 0 1 5 5v2zm-8-9a6 6 0 1 1 0-12 6 6 0 0 1 0 12z"/></svg></span><input type="text" name="candidates" value="" placeholder="2 Adults-0 Children">
+        </div>
+        <div class="form-submit">
+          <button class="search" type="submit"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"/></svg></button>
+        </div>
+      </form>
+  </div>
+  <!-- ======= about section ======= -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-12 title">
+          <div class="sub-title">
+            <h2><strong>Upcoming</strong> <br> Tours</h2>
+            <p>Tourism is travel for pleasure or business; also the
+              theory and practice of touring, the business of
+              attracting, accommodating, and entertaining…
+            </p>
+            <div class="slide-icon">
+              <div class="icon">
+                <a href="#"><i class="ri-arrow-left-s-line"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M10.828 12l4.95 4.95-1.414 1.414L8 12l6.364-6.364 1.414 1.414z"/></svg></i></a>
               </div>
-            </div>
-          <div class="img-part">
-            <div class="img-wholepart">
-              <div class="img-one">
-                <div class="blog-img">
-                  <img src="images/landscape.jpg" alt="">
-                </div>
-                <div class="text">
-                 <h3>Cook civiche in a <br> peruvian home</h3>
-                 <h4>From $450</h4>
-               </div>
-              </div>
-              <div class="img-two">
-                <div class="blog-img">
-                  <img src="images/fruit.jpg" alt="">
-                </div>
-                <div class="text">
-                  <h3>Cook civiche in a <br> peruvian home</h3>
-                  <h4>From $450</h4>
-                </div>
-              </div>
-              <div class="img-three">
-                <div class="blog-img">
-                  <img src="images/tree.jpg" alt="">
-                </div>
-                <div class="text">
-                  <h3>Cook civiche in a <br> peruvian home</h3>
-                  <h4>From $450</h4>
-                </div>
+              <div class="icon">
+                <a href="#"><i class="ri-arrow-right-s-line"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"/></svg></i></a>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="content-four">
-        <div class="whole-content">
-          <div class="heading">
-            <span>Discover Around</span>
-            <span>The World</span>
-          </div>
-          <div class="photos">
-            <div class="two-photos">
-              <div class="first-photo">
-                <div class="text">
-                  <button class="photo-button">15 Tours</button>
-                  <h4>Ancient Roman Road & <br>Aqueducts by bike</h4>
-                </div>
-              </div>
-              <div class="second-photo">
-                <div class="text">
-                  <button class="photo-button">12 Tours</button>
-                  <h4>Whiskey & beer at <br>the local barber</h4>
-              </div>
+        <div class="col-lg-3 col-md-4 pr-0">
+          <div class="images">
+            <div class="image">
+              <img src="images/landscape.jpg" alt="" width="250px" height="300px">
             </div>
-          </div>
-            <div class="three-photos">
-              <div class="first-photo">
-                <div class="text">
-                  <button class="photo-button">21 Tours</button>
-                  <h4>Paris photo walk<br>with lio iglesias</h4>
-                </div>
-              </div>
-              <div class="second-photo">
-                <div class="text">
-                  <button class="photo-button">16 Tours</button>
-                  <h4>Art studio sparks<br>your creativity</h4>
-                </div>
-              </div>
-              <div class="third-photo">
-                <div class="text">
-                  <button class="photo-button">19 Tours</button>
-                  <h4>Essence of iceland<br>own custom souvenir</h4>
-                </div>
-              </div>
+            <div class="image-info">
+              <h4>Cook civiche in a <br>
+                peruvian home</h4>
+              <h5>From $450</h5>
             </div>
           </div>
         </div>
-      </div>
-      <div class="content-five">
-        <div class="list-heading">
-          <h2><span>Best Offers</span></h2>
-          <button class="button button-one">View All Offers</button>
-        </div>
-        <div class="offer-list">
-          <div class="first-list">
-            <ul>
-              <li>
-                <h4 class="heading"><span>Paris, France</span></h4>
-                <h5 class="sub-heading"><span>Panorama City</span></h5>
-              </li>
-              <li>
-                <h4 class="heading"><span>7 Days</span></h4>
-                <h5 class="sub-heading"><span>6 Nights</span></h5>
-              </li>
-              <li>
-                <h4 class="heading"><span>11 February</span></h4>
-                <h5 class="sub-heading"><span>06:30PM</span></h5>
-              </li>
-              <li>
-                <h4 class="heading"><span>$ 1889</span></h4>
-                <h5 class="sub-heading"><span>It was $ 2449</span></h5>
-              </li>
-              <li>
-                <h4 class="heading"><span>$ 560</span></h4>
-                <h5 class="sub-heading"><span>Save 20%</span></h5>
-              </li>
-            </ul>
-         </div>
-         <div class="second-list">
-           <ul>
-             <li>
-               <h4 class="heading"><span>Dublin, Ireland</span></h4>
-               <h5 class="sub-heading"><span>Car Roadtrip</span></h5>
-             </li>
-             <li>
-               <h4 class="heading"><span>4 Days</span></h4>
-               <h5 class="sub-heading"><span>5 Nights</span></h5>
-             </li>
-             <li>
-               <h4 class="heading"><span>09 February</span></h4>
-               <h5 class="sub-heading"><span>11:30PM</span></h5>
-             </li>
-             <li>
-               <h4 class="heading"><span>$ 1400</span></h4>
-               <h5 class="sub-heading"><span>It was $ 1900</span></h5>
-             </li>
-             <li>
-               <h4 class="heading"><span>$ 500</span></h4>
-               <h5 class="sub-heading"><span>Save 25%</span></h5>
-             </li>
-           </ul>
-        </div>
-        <div class="third-list">
-          <ul>
-            <li>
-              <h4 class="heading"><span>Burlin, Germany</span></h4>
-              <h5 class="sub-heading"><span>Museums & City</span></h5>
-            </li>
-            <li>
-              <h4 class="heading"><span>9 Days</span></h4>
-              <h5 class="sub-heading"><span>10 Nights</span></h5>
-            </li>
-            <li>
-              <h4 class="heading"><span>12 February</span></h4>
-              <h5 class="sub-heading"><span>09:00PM</span></h5>
-            </li>
-            <li>
-              <h4 class="heading"><span>$ 1480</span></h4>
-              <h5 class="sub-heading"><span>It was $ 1600</span></h5>
-            </li>
-            <li>
-              <h4 class="heading"><span>$ 800</span></h4>
-              <h5 class="sub-heading"><span>Save 25%</span></h5>
-            </li>
-          </ul>
-       </div>
-       </div>
-      </div>
-      <div class="content-six">
-        <div class="blog">
-          <h2>Explore the Travel</h2>
-          <h3>Trough our Blog & Journal</h3>
-        </div>
-        <div class="blog-photos">
-          <div class="blog-img-one">
-            <img src="images/airoplane.jpg" alt="">
-            <div class="text">
-              <h4><span>Hiking Greenland's Arctic <br> Circle Trail 2019.</span></h4>
-              <p>Touism is travel for pleasure or bisiness; <br> also the theory and practice of touring, the <br> business of attracting, accommodating</p>
-              <a href="button">Read more<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path fill="none" d="M0 0h24v24H0z"/><path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"/></svg></a>
+        <div class="col-lg-3 col-md-4 pr-0">
+          <div class="images">
+            <div class="image">
+              <img src="images/fruit.jpg" alt="" width="250px" height="300px">
             </div>
-          </div>
-          <div class="blog-img-two">
-            <img src="images/boy.jpg" alt="">
-            <div class="text">
-              <h4><span>Why You Shouldn't Ride <br> Elephants in Indonesia</span></h4>
-              <p>Touism is travel for pleasure or bisiness; <br> also the theory and practice of touring, the <br> business of attracting, accommodating</p>
-              <a href="button">Read more<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path fill="none" d="M0 0h24v24H0z"/><path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"/></svg></a>
-            </div>
-          </div>
-          <div class="blog-img-three">
-            <img src="images/river.jpg" alt="">
-            <div class="text">
-              <h4><span>Best Travel Quotes For <br> Inspiration Travel Blogqq</span></h4>
-              <p>Touism is travel for pleasure or bisiness; <br> also the theory and practice of touring, the <br> business of attracting, accommodating</p>
-              <a href="button">Read more<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path fill="none" d="M0 0h24v24H0z"/><path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"/></svg></a>
+            <div class="image-info">
+              <h4>Cook civiche in a <br>
+                peruvian home</h4>
+              <h5>From $450</h5>
             </div>
           </div>
         </div>
-        <div class="read-blog-button">
-            <button class="button button-one">Read Our Blog</button>
-        </div>
-      </div>
-      <div class="content-seven">
-        <div class="blog">
-          <div class="text-part">
-            <h2>Travel Tours<br>Testimonials</h2>
-            <p>Tourism is travel for pleasure or business; also the <br> theory and practice of touring, the business of <br> attracting, accommodating, and entertaining…</p>
-              <div class="buttons">
-                <button class="previous"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M10.828 12l4.95 4.95-1.414 1.414L8 12l6.364-6.364 1.414 1.414z"/></svg></button>
-                <button class="next"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"/></svg></button>
-              </div>
+        <div class="col-lg-3 col-md-4 pr-0">
+          <div class="images">
+            <div class="image">
+              <img src="images/tree.jpg" alt="" width="250px" height="300px">
             </div>
-            <div class="personal-data">
-              <div class="persons">
-                <div class="person-one">
-                  <div class="stars-date">
-                    <div class="stars">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 17l-5.878 3.59 1.598-6.7-5.23-4.48 6.865-.55L12 2.5l2.645 6.36 6.866.55-5.231 4.48 1.598 6.7z"/></svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 17l-5.878 3.59 1.598-6.7-5.23-4.48 6.865-.55L12 2.5l2.645 6.36 6.866.55-5.231 4.48 1.598 6.7z"/></svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 17l-5.878 3.59 1.598-6.7-5.23-4.48 6.865-.55L12 2.5l2.645 6.36 6.866.55-5.231 4.48 1.598 6.7z"/></svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 17l-5.878 3.59 1.598-6.7-5.23-4.48 6.865-.55L12 2.5l2.645 6.36 6.866.55-5.231 4.48 1.598 6.7z"/></svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 14.656l2.817 1.72-.766-3.21 2.507-2.147-3.29-.264L12 7.708v6.948zM12 17l-5.878 3.59 1.598-6.7-5.23-4.48 6.865-.55L12 2.5l2.645 6.36 6.866.55-5.231 4.48 1.598 6.7L12 17z"/></svg>
-                    </div>
-                    <div class="date">
-                      <span>July 18th</span>
-                    </div>
-                  </div>
-                  <div>
-                    <h4>Everything was amzing!</h4>
-                    <p>Multos possumus cernantur. Vidisse aute eram ut dolor. Id se
-                      coniunctione.Senserit se magna offendit, culpa consequat nam domesticarum eu
-                      admodum a sunt admodum, ubi e praesentibus nam si ea familiaritatem, singulis
-                      graviterque si doctrina, eu quibusdam o quamquam aut senserit fidelissimae non
-                      constias. Vidisse velit cupidatat, nostrud aute excepteur mentitum, esse ubi.</p>
-                  </div>
-                  <div class="person-details">
-                    <div class="person-profile">
-                      <img src="images/girl profile.jpg" alt="">
-                    </div>
-                    <div class="person-name">
-                      <h5><span> Maja christiansen</span></h5>
-                      <h6><span>Paris, France Muosium Tour</span></h6>
-                    </div>
-                  </div>
-                </div>
-                <div class="person-second">
-                  <div class="stars-date">
-                    <div class="stars">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 17l-5.878 3.59 1.598-6.7-5.23-4.48 6.865-.55L12 2.5l2.645 6.36 6.866.55-5.231 4.48 1.598 6.7z"/></svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 17l-5.878 3.59 1.598-6.7-5.23-4.48 6.865-.55L12 2.5l2.645 6.36 6.866.55-5.231 4.48 1.598 6.7z"/></svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 17l-5.878 3.59 1.598-6.7-5.23-4.48 6.865-.55L12 2.5l2.645 6.36 6.866.55-5.231 4.48 1.598 6.7z"/></svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 14.656l2.817 1.72-.766-3.21 2.507-2.147-3.29-.264L12 7.708v6.948zM12 17l-5.878 3.59 1.598-6.7-5.23-4.48 6.865-.55L12 2.5l2.645 6.36 6.866.55-5.231 4.48 1.598 6.7L12 17z"/></svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 14.656l2.817 1.72-.766-3.21 2.507-2.147-3.29-.264L12 7.708v6.948zM12 17l-5.878 3.59 1.598-6.7-5.23-4.48 6.865-.55L12 2.5l2.645 6.36 6.866.55-5.231 4.48 1.598 6.7L12 17z"/></svg>
-                    </div>
-                    <div class="date">
-                        <span>Augast 24th</span>
-                    </div>
-                  </div>
-                  <div>
-                    <h4>Everything was amzing!</h4>
-                    <p>Multos possumus cernantur. Vidisse aute eram ut dolor. Id se
-                      coniunctione.Senserit se magna offendit, culpa consequat nam domesticarum eu
-                      admodum a sunt admodum, ubi e praesentibus nam si ea familiaritatem, singulis
-                      graviterque si doctrina, eu quibusdam o quamquam aut senserit fidelissimae non
-                      constias. Vidisse velit cupidatat, nostrud aute excepteur mentitum, esse ubi.</p>
-                  </div>
-                  <div class="person-details">
-                    <div class="person-profile">
-                      <img src="images/girl profile 2.jpg" alt="">
-                    </div>
-                    <div class="person-name">
-                      <h5><span> Sofie Olsen</span></h5>
-                      <h6><span>Paris, France Muosium Tour</span></h6>
-                    </div>
-                  </div>
-                </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="content-eight">
-        <div class="insta-logo">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="64" height="64"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm0-2a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm6.5-.25a1.25 1.25 0 0 1-2.5 0 1.25 1.25 0 0 1 2.5 0zM12 4c-2.474 0-2.878.007-4.029.058-.784.037-1.31.142-1.798.332-.434.168-.747.369-1.08.703a2.89 2.89 0 0 0-.704 1.08c-.19.49-.295 1.015-.331 1.798C4.006 9.075 4 9.461 4 12c0 2.474.007 2.878.058 4.029.037.783.142 1.31.331 1.797.17.435.37.748.702 1.08.337.336.65.537 1.08.703.494.191 1.02.297 1.8.333C9.075 19.994 9.461 20 12 20c2.474 0 2.878-.007 4.029-.058.782-.037 1.309-.142 1.797-.331.433-.169.748-.37 1.08-.702.337-.337.538-.65.704-1.08.19-.493.296-1.02.332-1.8.052-1.104.058-1.49.058-4.029 0-2.474-.007-2.878-.058-4.029-.037-.782-.142-1.31-.332-1.798a2.911 2.911 0 0 0-.703-1.08 2.884 2.884 0 0 0-1.08-.704c-.49-.19-1.016-.295-1.798-.331C14.925 4.006 14.539 4 12 4zm0-2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2z"/></svg>
-          <h3>Get Inspired with</h3>
-          <h4>Photos From Instagram</h4>
-        </div>
-        <div class="photo-galary">
-          <img src="images/white city.png" alt="">
-          <img src="images/cameraman.jpg" alt="">
-          <img src="images/boat.jpg" alt="">
-          <img src="images/beach city.jpg" alt="">
-          <img src="images/bicycling.jpg" alt="">
-        </div>
-        <div class="photo-galary">
-          <img src="images/vally.png" alt="">
-          <img src="images/photoclick.jpg" alt="">
-          <img src="images/mountain.jpg" alt="">
-          <img src="images/breach.jpg" alt="">
-          <img src="images/lake.jpg" alt="">
-        </div>
-        <div class="subscibe">
-          <h3>Subsciber to our Newsletter</h3>
-          <h4>Tourism is travel for pleasure or business</h4>
-        </div>
-      </div>
-      <div class="content-nine">
-        <div class="subscribe-wrapper">
-          <div class="email-location">
-            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm9.06 8.683L5.648 6.238 4.353 7.762l7.72 6.555 7.581-6.56-1.308-1.513-6.285 5.439z"/></svg>Type Your Email </span>
-          </div>
-          <div class="subscribe-button ">
-            <button class="subscibe">Subscribe</button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer>
-       <div class="navigation-part">
-        <div class="navigation-wrapper">
-        <div class="logo">
-          <img src="images/knife travel logo.png" alt="company logo">
-        </div>
-        <div class="navigation">
-            <ul>
-              <li class="active-home"><span>Home</span></li>
-              <li><span>About</span></li>
-              <li><span>Tours</span></li>
-              <li><span>Blog</span></li>
-              <li><span>Contact</span></li>
-            </ul>
-        </div>
-        <div class="contact">
-          <div class="inner-content">
-            <div>
-              <img src="images/contact icon.png" alt="contact icon">
-            </div>
-            <div>
-              <span>011 234 456 999</span>
+            <div class="image-info">
+              <h4>Cook civiche in a <br>
+                peruvian home</h4>
+              <h5>From $450</h5>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </footer>
+  </section>
+  <!-- ======= gallary section ======= -->
+  <section class="gallary">
+    <div class="container">
+      <div class="title text-center">
+        <h2><strong>Discover Around</strong> <br>
+          The World</h2>
+      </div>
+      <div class="row">
+        <!-- /*-first-image-*/ -->
+        <div class="col-lg-8 col-md-8 m-auto ">
+          <div class="card first-img bg-dark text-white">
+            <img src="images/palace.jpg" class="card-img" alt="..." style="height:550px;">
+            <div class="card-img-overlay">
+              <button type="button" name="button">15 Tours</button>
+              <h5 class="card-title">
+                Ancient Roman Road & <br>
+                Aqueducts by bike
+              </h5>
+              <a href="#">Explore Now &rarr;</a>
+            </div>
+          </div>
+        </div>
+        <!-- /*-second-image-*/ -->
+        <div class="col-lg-4 col-md-6 ">
+          <div class="card big-card bg-dark text-white">
+            <img src="images/Beach.jpg" class="card-img" alt="..." style="height:550px;">
+            <div class="card-img-overlay">
+              <button type="button" name="button">12 Tours</button>
+              <h5 class="card-title">
+                Whiskey & beer at <br>
+                the local barber
+              </h5>
+              <a href="#">Explore Now &rarr;</a>
+            </div>
+          </div>
+        </div>
+        <!-- /*-third-image-*/ -->
+        <div class="col-lg-4 col-md-6 ">
+          <div class="card small-card bg-dark text-white">
+            <img src="images/cityscape.jpg" class="card-img" alt="..." style="height:320px;">
+            <div class="card-img-overlay">
+              <button type="button" name="button">21 Tours</button>
+              <h5 class="card-title">
+                Paris photo walk <br>
+                with lio iglesias
+              </h5>
+              <a href="#">Explore Now &rarr;</a>
+            </div>
+          </div>
+        </div>
+        <!-- /*-fourth-image-*/ -->
+        <div class="col-lg-4 col-md-6 ">
+          <div class="card small-card bg-dark text-white">
+            <img src="images/studio.jpg" class="card-img" alt="..." style="height:320px;">
+            <div class="card-img-overlay">
+              <button type="button" name="button">14 Tours</button>
+              <h5 class="card-title">
+                Art studio sparks <br>
+                your creativity
+              </h5>
+              <a href="#">Explore Now &rarr;</a>
+            </div>
+          </div>
+        </div>
+        <!-- /*-fifth-image-*/ -->
+        <div class="col-lg-4 col-md-6 ">
+          <div class="card small-card bg-dark text-white">
+            <img src="images/iceland.jpg" class="card-img" alt="..." style="height:320px;">
+            <div class="card-img-overlay">
+              <button type="button" name="button">18 Tours</button>
+              <h5 class="card-title">
+                Essence of iceland <br>
+                own custom souvenir
+              </h5>
+              <a href="#">Explore Now &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ======= best offers section ======= -->
+  <div class="best-offer" id="tours">
+    <div class="container">
+        <div class="title">
+          <h2><strong>Best</strong> Offers</h2>
+          <button type="button" name="button">View All Offers</button>
+        </div>
+      <!-- /*-first-row-*/ -->
+      <div class="row">
+        <div class="col">
+          <img src="images/cityscape.jpg" class="card-img" alt="...">
+        </div>
+        <!-- /*-first-column-*/ -->
+        <div class="col">
+          <h5>Paris, France</h5>
+          <p>Panorama City</p>
+        </div>
+        <!-- /*-second-column-*/ -->
+        <div class="col">
+          <h5>7 Days</h5>
+          <p>6 Nights</p>
+        </div>
+        <!-- /*-third-column-*/ -->
+        <div class="col">
+          <h5>11 February</h5>
+          <p>06:30PM</p>
+        </div>
+        <!-- /*-forth-column-*/ -->
+        <div class="col">
+          <h5>$ 1889</h5>
+          <p>It was $ 2449</p>
+        </div>
+        <!-- /*-fifth-column-*/ -->
+        <div class="col">
+          <h5>$ 560</h5>
+          <p>Save 20%</p>
+        </div>
+      </div>
+      <!-- second row -->
+      <div class="row">
+        <div class="col">
+          <img src="images/vally.png" class="card-img" alt="...">
+        </div>
+        <!-- /*-first-column-*/ -->
+        <div class="col">
+          <h5>Dublin, Ireland</h5>
+          <p>Car Roadtrip</p>
+        </div>
+        <!-- /*-second-column-*/ -->
+        <div class="col">
+          <h5>4 Days</h5>
+          <p>5 Nights</p>
+        </div>
+        <!-- /*-third-column-*/ -->
+        <div class="col">
+          <h5>9 February</h5>
+          <p>11:30PM</p>
+        </div>
+        <!-- /*-forth-column-*/ -->
+        <div class="col">
+          <h5>$ 1400</h5>
+          <p>It was $ 1900</p>
+        </div>
+        <!-- /*-fifth-column-*/ -->
+        <div class="col">
+          <h5>$ 500</h5>
+          <p>Save 25%</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <img src="images/landscape.jpg" class="card-img" alt="...">
+        </div>
+        <!-- /*-first-column-*/ -->
+        <div class="col">
+          <h5>Burlin, Germany</h5>
+          <p>Museums & City</p>
+        </div>
+        <!-- /*-second-column-*/ -->
+        <div class="col">
+          <h5>9 Days</h5>
+          <p>10 Nights</p>
+        </div>
+        <!-- /*-third-column-*/ -->
+        <div class="col">
+          <h5>12 February</h5>
+          <p>09:00PM</p>
+        </div>
+        <!-- /*-forth-column-*/ -->
+        <div class="col">
+          <h5>$ 1480</h5>
+          <p>It was $ 1600</p>
+        </div>
+        <!-- /*-fifth-column-*/ -->
+        <div class="col">
+          <h5>$ 800</h5>
+          <p>Save 28%</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ======= blog section ======= -->
+    <section class="blog" id="blog">
+      <div class="container">
+        <div class="text-center">
+          <h2>
+            <strong>Explore the Travel</strong> <br>
+            Trough our Blog & Journal
+          </h2>
+        </div>
+        <div class="row justify-content-md-center">
+          <!-- /*-first-column-*/ -->
+          <div class="col-lg-4 col-md-6 pr-lg-0">
+            <div class="card">
+              <img class="card-img-top" src="images/airoplane.jpg" alt="">
+              <div class="card-body">
+                <h5 class="card-title">
+                  Hiking Greenland's Arctic
+                  Circle Trail 2019.
+                </h5>
+                <p class="card-text">
+                  Touism is travel for pleasure or bisiness;
+                  also the theory and practice of touring, the
+                  business of attracting, accommodating
+                </p>
+                <a href="#">Read more &raquo;</a>
+              </div>
+            </div>
+          </div>
+          <!-- /*-second-column-*/ -->
+          <div class="col-lg-4 col-md-6 pr-lg-0">
+            <div class="card">
+              <img class="card-img-top" src="images/boy.jpg" alt="">
+              <div class="card-body">
+                <h5 class="card-title">
+                  Why You Shouldn't Ride
+                  Elephants in Indonesia.
+                </h5>
+                <p class="card-text">
+                  Touism is travel for pleasure or bisiness;
+                  also the theory and practice of touring, the
+                  business of attracting, accommodating
+                </p>
+                <a href="#">Read more &raquo;</a>
+              </div>
+            </div>
+          </div>
+          <!-- /*-third-column-*/ -->
+          <div class="col-lg-4 col-md-6  mt-lg-0 mt-md-5 pr-lg-0">
+            <div class="card">
+              <img class="card-img-top" src="images/river.jpg" alt="">
+              <div class="card-body">
+                <h5 class="card-title">
+                  Best Travel Quotes For
+                  Inspiration Travel Blog.
+                </h5>
+                <p class="card-text">
+                  Touism is travel for pleasure or bisiness;
+                  also the theory and practice of touring, the
+                  business of attracting, accommodating
+                </p>
+                <a href="#">Read more &raquo;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <button class="blog-btn" type="button" name="button">Read Our Blog</button>
+        </div>
+      </div>
+    </section>
+    <!-- ======= testimonials section ======= -->
+    <section class="testimonials">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-12 title">
+              <div class="sub-title">
+                <h2><strong>Travel Tours</strong> <br> Testimonials</h2>
+                <p>Tourism is travel for pleasure or business; also the
+                  theory and practice of touring, the business of
+                  attracting, accommodating, and entertaining…
+                </p>
+                <div class="slide-icon">
+                  <div class="icon">
+                    <a href="#"><i class="ri-arrow-left-s-line"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M10.828 12l4.95 4.95-1.414 1.414L8 12l6.364-6.364 1.414 1.414z"/></svg></i></a>
+                  </div>
+                  <div class="icon">
+                    <a href="#"><i class="ri-arrow-right-s-line"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"/></svg></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-5 mt-lg-0">
+              <div class="card">
+                <div class="card-header">
+                  <div class="stars">
+                    <i class="ri-star-fill"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"/></svg></i>
+                    <i class="ri-star-fill"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"/></svg></i>
+                    <i class="ri-star-fill"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"/></svg></i>
+                    <i class="ri-star-fill"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"/></svg></i>
+                    <i class="ri-star-half-fill"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 15.968l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275v10.693zm0 2.292l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26z"/></svg></i>
+                  </div>
+                  <div class="date">
+                    <span>July 18th</span>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Everything was amazing!
+                  </h5>
+                  <p class="card-text">
+                    We enjoyed our Israel trip immensely. The hotels were wonderful…we really enjoyed Meir, our tour guide. He was so knowledgeable. His experience as a soldier and commander in the ‘67 war and the Yom Kippur War made us feel like we were seeing the country through the eyes of a person that was instrumental in its formation and growth. A true Sabra!
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <div class="img">
+                      <img src="images/girl profile.jpg" alt="">
+                  </div>
+                  <div class="names">
+                    <h6>Maja christiansen</h6>
+                    <p>Paris, France Muosium Tour</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-5 mt-lg-0">
+              <div class="card">
+                <div class="card-header">
+                  <div class="stars">
+                    <i class="ri-star-fill"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"/></svg></i>
+                    <i class="ri-star-fill"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"/></svg></i>
+                    <i class="ri-star-fill"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"/></svg></i>
+                    <i class="ri-star-half-fill"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 15.968l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275v10.693zm0 2.292l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26z"/></svg></i>
+                    <i class="ri-star-line"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26zm0-2.292l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275l-2.038 4.42-4.833.572 3.573 3.305-.949 4.773L12 15.968z"/></svg></i>
+                  </div>
+                  <div class="date">
+                    <span>Augast 24th</span>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Awesome experience!
+                  </h5>
+                  <p class="card-text">
+                    We enjoyed our Israel trip immensely. The hotels were wonderful…we really enjoyed Meir, our tour guide. He was so knowledgeable. His experience as a soldier and commander in the ‘67 war and the Yom Kippur War made us feel like we were seeing the country through the eyes of a person that was instrumental in its formation and growth. A true Sabra!
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <div class="img">
+                    <img src="images/girl profile 2.jpg" alt="">
+                  </div>
+                  <div class="names">
+                    <h6>Sofie Olsen</h6>
+                    <p>Paris, France Muosium Tour</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="img-gallary">
+      <div class="container">
+        <div class="row">
 
+        </div>
+      </div>
+    </section>
+    <section class="subscibe-mail">
+      <div class="container text-center">
+        <div class="title">
+          <h5>Subsciber to our Newsletter</h5>
+          <p>Tourism is travel for pleasure or business</p>
+        </div>
+      </div>
+    </section>
+    <section class="container">
+        <div class="subscibe">
+          <form class="subscibe-form action="index.html" method="get">
+            <div class="email">
+              <span><i class="ri-mail-fill"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm9.06 8.683L5.648 6.238 4.353 7.762l7.72 6.555 7.581-6.56-1.308-1.513-6.285 5.439z"/></svg></i></span> <input type="email" name="email" value="" placeholder="Type Your Email">
+            </div>
+            <div class="button">
+              <input type="submit" name="subscibe" value="subscibe">
+            </div>
+          </form>
+        </div>
+    </section>
+    <footer>
+      <div class="container">
+        <!-- ======= nav Bar ======= -->
+        <div class="header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container">
+            <div class="logo-box">
+                <a href="#" class="navbar-brand d-flex"><img src="images/knife-travel-logo.png" alt=""></a>
+            </div>
+            <button class="navbar-toggler order-3" type="button" data-toggle="collapse" data-target="#navbarnav" aria-controls="navbarnav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarnav">
+              <ul class="navbar-nav justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#tours">Tours</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#blog">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+              <div class="number">
+                <span>
+                    <img src="images/contact icon.png" alt="">
+                </span>
+                <a href="tel:001 234 567 8999">001 234 567 8999</a>
+              </div>
+          </div>
+        </nav>
+      </div>
+    </footer>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
   </body>
 </html>
