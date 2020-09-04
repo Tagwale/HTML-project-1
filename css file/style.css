@@ -298,9 +298,9 @@ a:hover {
   .gallary .first-img img {
     max-height: 400px;
   }
-  .gallary .big-card img {
+  /* .gallary .big-card img {
     max-height: 320px;
-  }
+  } */
 }
 
 /*--------------------------------------------------------------
