@@ -281,6 +281,15 @@ a:hover {
   border: hidden;
   border-radius: 0.2em;
 }
+@media (max-width: 576px) {
+.gallary .card {
+  margin: 30px auto;
+  max-width: 310px;
+}
+.gallary .card img {
+  max-height: 320px;
+  }
+}
 @media (max-width: 812px) {
   .gallary .card {
     margin: 0;
@@ -292,18 +301,8 @@ a:hover {
   .gallary .big-card img {
     max-height: 320px;
   }
+}
 
-}
-@media (max-width: 576px) {
-}
-.gallary .card {
-  margin: 30px auto;
-  max-width: 310px;
-}
-.gallary .card img {
-  max-height: 320px;
-}
-}
 /*--------------------------------------------------------------
 # best offers section
 --------------------------------------------------------------*/
