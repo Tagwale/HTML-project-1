@@ -247,6 +247,7 @@ a:hover {
 .gallary .title h2 {
   font-size: 50px;
   font-weight: 200;
+  margin-bottom: 50px;
 }
 .gallary .card {
   border: hidden;
